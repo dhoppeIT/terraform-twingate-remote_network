@@ -11,7 +11,12 @@ specify the required variables and run the command `terraform init`.
 
 ```hcl
 module "twingate_remote_network" {
-  source = "git::ssh://git@gitlab.com:terraform-child-modules-48151/terraform-twingate-remote_network.git"
+  source  = "gitlab.com/terraform-child-modules-48151/terraform-twingate-remote-network/local"
+  version = "1.0.0"
+
+  name = "example-network"
+
+  location = "ON_PREMISE"
 }
 ```
 
@@ -25,7 +30,9 @@ module "twingate_remote_network" {
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_twingate"></a> [twingate](#provider\_twingate) | ~> 3.0 |
 
 ## Modules
 
@@ -33,15 +40,23 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [twingate_remote_network.this](https://registry.terraform.io/providers/twingate/twingate/latest/docs/resources/remote_network) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_location"></a> [location](#input\_location) | The location of the Remote Network | `string` | `null` | no |
+| <a name="input_name"></a> [name](#input\_name) | The name of the Remote Network | `string` | n/a | yes |
+| <a name="input_type"></a> [type](#input\_type) | The type of the Remote Network | `string` | `"REGULAR"` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The ID of the Remote Network |
 <!-- END_TF_DOCS -->
 
 ## Authors
