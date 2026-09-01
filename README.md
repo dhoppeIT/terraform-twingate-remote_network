@@ -25,15 +25,15 @@ module "twingate_remote_network" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_twingate"></a> [twingate](#requirement\_twingate) | ~> 4.0 |
+| <a name="requirement_twingate"></a> [twingate](#requirement\_twingate) | ~> 5.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_twingate"></a> [twingate](#provider\_twingate) | ~> 4.0 |
+| ---- | ------- |
+| <a name="provider_twingate"></a> [twingate](#provider\_twingate) | ~> 5.0 |
 
 ## Modules
 
@@ -42,13 +42,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [twingate_remote_network.this](https://registry.terraform.io/providers/twingate/twingate/latest/docs/resources/remote_network) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_location"></a> [location](#input\_location) | The location of the Remote Network | `string` | `null` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the Remote Network | `string` | n/a | yes |
 | <a name="input_type"></a> [type](#input\_type) | The type of the Remote Network | `string` | `"REGULAR"` | no |
@@ -56,7 +56,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | The ID of the Remote Network |
 <!-- END_TF_DOCS -->
 
