@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://gitlab.com/terraform-child-modules-48151/terraform-twingate-remote_network/compare/v1.1.0...v1.2.0) (2026-09-01)
+
+### Features
+
+* **terraform:** Upgrade to latest available version of Terraform provider ([b57b696](https://gitlab.com/terraform-child-modules-48151/terraform-twingate-remote_network/commit/b57b696fffac204c542e6c4e4135c7c501794d79))
+
 ## [1.1.0](https://gitlab.com/terraform-child-modules-48151/terraform-twingate-remote_network/compare/v1.0.0...v1.1.0) (2026-02-24)
 
 ### Features
